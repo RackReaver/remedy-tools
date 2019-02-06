@@ -1,0 +1,9 @@
+# Virtual Enviornment
+/venv/*
+
+# Code Editor files
+.vscode/*
+
+
+# All logs 
+*.log
