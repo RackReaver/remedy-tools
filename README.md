@@ -51,4 +51,4 @@ This project is licensed under the Apache License - see the [LICENSE](LICENSE) f
 
 ## Acknowledgments
 
-* **Adam Sadovsky** *[XPath Helper]*(https://github.com/google/xpaf) - XPath-based Parsing Framework (Chrome Extension)
+* **Adam Sadovsky** *[XPath Helper](https://github.com/google/xpaf)* - XPath-based Parsing Framework (Chrome Extension)
