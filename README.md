@@ -11,25 +11,16 @@ because the Remedy system (depending on its configuration) requires user authent
 user token will be in use by the chromedriver and opening Remedy in another browser will cause the process
 to fail.
 
-### Prerequisites
-
-The following is required for using this package.
-
-```
-placeholder
-```
-
-### Installing
-
-placeholder
-
-## Deployment
+## Installation
 
 This package is available on [PyPi](https://pypi.org) and can be installed with the below command.
 
 ```
 $ pip install remedy-tools
 ```
+
+## How to use
+placeholder
 
 ## Built With
 
