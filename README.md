@@ -28,10 +28,6 @@ placeholder
 * [Requests](http://docs.python-requests.org/en/master/) - HTTP for Humans
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - HTML Parser
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
 * **Matt Ferreira** - *Developer* - [RackReaver](https://github.com/RackReaver)
