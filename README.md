@@ -13,7 +13,7 @@ to fail.
 
 ## Installation
 
-This package is available on [PyPi](https://pypi.org) and can be installed with the below command.
+This package is available on [PyPi](https://pypi.org) and can be installed with the following command:
 
 ```
 $ pip install remedy-tools
