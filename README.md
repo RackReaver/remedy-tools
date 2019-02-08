@@ -20,7 +20,24 @@ $ pip install remedy-tools
 ```
 
 ## How to use
-placeholder
+```
+>>> from remedy-tools import RemedyTools
+>>> client = Client(remedy_url, chromedriver_path)
+>>> 
+>>> details = {
+>>>     'customers': '',
+>>>     'queue_name': '',
+>>>     'summary': '',
+>>>     'notes': '',
+>>>     'service': '',
+>>>     'work_details': '',
+>>>     'operational_tier_1': '',
+>>>     'operational_tier_2': '',
+>>>     'operational_tier_3': ''
+>>> }
+>>> 
+>>> ticket_number = client.WorkOrder(**details)
+```
 
 ## Built With
 
