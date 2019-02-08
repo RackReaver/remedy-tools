@@ -3,7 +3,6 @@ import datetime
 import requests
 from bs4 import BeautifulSoup
 from tqdm import tqdm
-import logging
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.common.keys import Keys
@@ -11,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
 
-class RemedyTools:
+class Client:
     def __init__(self, remedy_url, driver_path):
         self.link = remedy_url
         self.driver = driver_path
@@ -23,15 +22,18 @@ class RemedyTools:
         This requires your remedy homepage to be set to the
         Work Order Console.
 
-        :kwarg:str: customer
-        :kwarg:str: quene_name
-        :kwarg:str: summary
-        :kwarg:str: notes
-        :kwarg:str: service
-        :kwarg:str|list: work details
-        :kwarg:str: operational tier 1
-        :kwarg:str: operational tier 2
-        :kwarg:str: operational tier 3
+        kwargs = {
+            'customers': '',
+            'queue_name': '',
+            'summary': '',
+            'notes': '['', '']',
+            'service': '',
+            'work_details': '',
+            'operational_tier_1': '',
+            'operational_tier_2': '',
+            'operational_tier_3': '',
+
+        }
         """
 
         self.customer = kwargs['customer']
@@ -195,3 +197,5 @@ class RemedyTools:
             browser.get('https://google.com')
             time.sleep(5)
             browser.quit()
+
+        return self.work_order_number
