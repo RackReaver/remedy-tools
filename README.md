@@ -11,6 +11,12 @@ because the Remedy system (depending on its configuration) requires user authent
 user token will be in use by the chromedriver and opening Remedy in another browser will cause the process
 to fail.
 
+### Prerequisites
+
+To use this package is will require the chromedriver from chromium.
+
+* [chromedriver.exe](http://chromedriver.chromium.org/) - Open Source Tool for Automated Testing
+
 ## Installation
 
 This package is available on [PyPi](https://pypi.org) and can be installed with the following command:
