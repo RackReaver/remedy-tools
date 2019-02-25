@@ -5,7 +5,8 @@
 .vscode/*
 
 
-# All logs 
+# All logs
+logs/* 
 *.log
 
 # Temp files
