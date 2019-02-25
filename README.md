@@ -45,6 +45,9 @@ $ pip install remedy-tools
 >>> ticket_number = client.WorkOrder(**details)
 ```
 
+## TO-DO
+* Integrate selection of priority into details dictionary (currently auto selects Medium)
+
 ## Built With
 
 * [Selenium](https://www.seleniumhq.org/) - Web Browser Automation
