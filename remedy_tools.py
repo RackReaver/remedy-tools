@@ -93,7 +93,7 @@ class Client:
                     'arid_WIN_2_200000020')
                 service.click()
                 service.send_keys(self.service)
-                time.sleep(2)
+                time.sleep(3)
                 service.send_keys(Keys.DOWN)
                 service.send_keys(Keys.ENTER)
 
