@@ -191,8 +191,13 @@ class Client:
             else:
                 logging.INFO(
                     'Please set Remedy homepage to Work Order Console.')
+        except Exception as e:
+            print('ERROR... \n{}'.format(e))
 
         finally:
+            logout = browser.find_element_by_id('WIN_0_300000044')
+            logout.click()
+            time.sleep(2)
             browser.get('https://google.com')
             time.sleep(5)
             browser.quit()
