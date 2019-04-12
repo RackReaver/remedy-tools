@@ -1,3 +1,6 @@
+# Config files
+/config/*
+
 # Virtual Enviornment
 /venv/*
 
