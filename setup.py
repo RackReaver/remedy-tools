@@ -27,7 +27,6 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.7'
     ],
-    packages=['remedy_tools'],
     include_package_data=True,
     install_requirements=['requests',
                           'bs4',
