@@ -10,3 +10,12 @@ install:
 # Run tests
 script:
   - pytest
+
+deploy:
+  provider: pypi
+  server: https://test.pypi.org/legacy/
+  user: RackReaver
+  password:
+    secure: "jhoq3cKXpyQV0oy2/ajYXzGRQWnrnIm1IT/g522tomQKU8IYbn4Wtr1kSV74exWqjFz+VapitJLTRLv/PemhXiUHsP8yEp3odjkGSnedQI4vSkJ9O/3VqpJWrU3M986BZ+8L3JFnDouxAqbFbB7YFvky4jdGvnI0N37yoBdLpV8Y8uyAaVzfPrAGAW5Pa4D5AAdj9wEFklWw4wGrMo7Z+BrGMcyG9KzPCLYGmiIiaJdatUMVw2N9PUVTgzzV/Xky4AbkKfuMnNpZKywd8T1FsVuhe9n5dStjVho+q0N2tiqcLhmg8NY+cwBtkeLJFJU3/slDAQ1U64aIe/VfaZuTrOs1Pr95A/vrZKZuQdpsWlNpSus2PW9EnzXeYYCVO4vavNNtx9nb/ue2g4M++Pyrak56ev4Qq1YT12oqfgPcc69N02bTG5VEs3wVrfTu7tm73cokW3zhuCpOKvLoLcR1g9xj1UOQRopPJpPfF/mGumY6IMik0RcKt6gilOz4J4jlgrR0YRV+fIdLt2/AkDdlkfg9yhNxO8A/D54G9xC6g1g7hKwFLI3kzDfZoovoFq+MMGfUUiUGosV6ve4g3ZlXVPqhh1KwqGUstis9fY0lihVk7V7NA0/guAfKj1UWOjfYZ2+WeaQj3PJFc8Oy+7KrkfU9cdlw5iCLkj9kmj0kshI="
+  on:
+    tags: true
