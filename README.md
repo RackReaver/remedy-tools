@@ -13,33 +13,46 @@ to fail.
 
 ### Prerequisites
 
-The following is required for using this package.
+To use this package is will require the chromedriver from chromium.
 
-```
-placeholder
-```
+* [chromedriver.exe](http://chromedriver.chromium.org/) - Open Source Tool for Automated Testing
 
-### Installing
+## Installation
 
-placeholder
-
-## Deployment
-
-This package is available on [PyPi](https://pypi.org) and can be installed with the below command.
+This package is available on [PyPi](https://pypi.org) and can be installed with the following command:
 
 ```
 $ pip install remedy-tools
 ```
+
+## How to use
+```
+>>> from remedy-tools import RemedyTools
+>>> client = Client(remedy_url, chromedriver_path)
+>>> 
+>>> details = {
+>>>     'customers': '',
+>>>     'queue_name': '',
+>>>     'summary': '',
+>>>     'notes': '',
+>>>     'service': '',
+>>>     'work_details': '',
+>>>     'operational_tier_1': '',
+>>>     'operational_tier_2': '',
+>>>     'operational_tier_3': ''
+>>> }
+>>> 
+>>> ticket_number = client.WorkOrder(**details)
+```
+
+## TO-DO
+* Integrate selection of priority into details dictionary (currently auto selects Medium)
 
 ## Built With
 
 * [Selenium](https://www.seleniumhq.org/) - Web Browser Automation
 * [Requests](http://docs.python-requests.org/en/master/) - HTTP for Humans
 * [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) - HTML Parser
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
 ## Authors
 
