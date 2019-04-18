@@ -7,9 +7,9 @@ python:
 install:
   - pip install -r requirements.txt
 
-# Run tests
-script:
-  - pytest
+# # Run tests
+# script:
+#   - pytest
 
 deploy:
   provider: pypi
