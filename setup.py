@@ -1,4 +1,5 @@
 from setuptools import setup
+import versioneer
 
 # read the contents of your README file
 from os import path
@@ -8,7 +9,8 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='remedy-tools',
-    version='0.0.1',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     url='https://github.com/RackReaver/remedy-tools',
     license='Apache License',
     author='Matt Ferreira',
