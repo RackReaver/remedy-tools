@@ -4,12 +4,7 @@ This package leverages selenium to create tickets in the back-end gui of BMC Rem
 
 ## Getting Started
 
-This package was created to programatically create tickets in BMC Remedy when an api is unavilable or access
-to it is not possible. This project was made possible with the use of selenium which is used to simulate a
-user submitting a ticket through the back-end gui. This is a semi-automated process for creating tickets,
-because the Remedy system (depending on its configuration) requires user authentication, this means your
-user token will be in use by the chromedriver and opening Remedy in another browser will cause the process
-to fail.
+This package was created to programmatically create tickets in BMC Remedy when an api is unavailable or access to it is not possible. This project was made possible with the use of selenium which is used to simulate a user submitting a ticket through the back-end gui. This is a semi-automated process for creating tickets, because the Remedy system (depending on its configuration) requires user authentication, this means your user token will be in use by the chromedriver and opening Remedy in another browser will cause the process to fail.
 
 ### Prerequisites
 
