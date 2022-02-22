@@ -9,7 +9,7 @@ colorama==0.4.1
 idna==2.8
 more-itertools==7.0.0
 pluggy==0.9.0
-py==1.8.0
+py==1.10.0
 pycodestyle==2.5.0
 pytest==4.3.0
 requests==2.21.0
